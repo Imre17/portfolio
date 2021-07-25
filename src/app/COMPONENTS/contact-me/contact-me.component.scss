@@ -1,0 +1,127 @@
+@import '../../../scss/global.scss';
+
+.get-in-touch {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        width: 38.75rem;
+        color: $grayishDarkBlue;
+        font-family: $public-sans;
+        font-size: $body;
+        line-height: $body-LH;
+        font-weight: $body-weight;
+
+        @include respond(desktop) {
+            width: 26.25rem;
+        }
+
+        @include respond(tablet) {
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            font-size: 0.8rem;
+        }
+    }
+
+    .social {
+        align-self: center;
+        justify-self: center;
+
+        a {
+           color: $darkBlue;
+           font-size: 1.5rem;
+           
+            @include respond(phone) {
+                font-size: 1.2rem;
+            }
+           
+            &:not(:first-child) {
+                margin-left: 0.9375rem;
+            }
+
+            &:hover {
+               color: $slightDesaturatedCyan;
+            }
+        }
+    }
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
+
+    .form {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        
+        @include respond(tab-land) {
+            flex-basis: 100%;
+        }
+
+        label {
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: $public-sans;
+
+            @include respond(tablet) {
+                font-size: 0.8rem;
+            }
+
+            &:not(:first-child) {
+                margin-top: 2rem;
+            }
+        }
+
+        .input-field {
+            padding: 0.75rem 1.3rem;
+            border: none;
+            background-color: $lightGrey;
+            outline: none;
+
+            @include respond(tablet) {
+                font-size: 0.8rem;
+            }
+        }
+
+        #btn {
+            width: 12.5rem;
+            margin: 3rem 0;
+
+            @include respond(tablet) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+h1 {
+    color: $darkBlue;
+    font-size: $H1;
+    font-family: $ibarra;
+    font-weight: $H1-weight;
+    letter-spacing: $H1-LS;
+
+    @include respond(desktop) {
+        font-size: 2.5rem;
+    }
+
+    @include respond(tab-land) {
+        margin-bottom: 2rem;
+    }
+    
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+}

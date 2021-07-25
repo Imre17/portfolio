@@ -1,0 +1,43 @@
+// Imports
+// Import Font-family
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+
+// Import global SCSS-including all scss files
+@import './global.scss';
+
+//Default styling for the sides (use this class for adding space to the both side of the webpage)!!
+.res-container {
+    padding: 0 8rem;
+
+    @include respond(desktop) {
+        padding: 0 5rem;
+    }
+
+    @include respond(tablet) {
+        padding: 0 3rem;
+    }
+    
+    @include respond(phone) {
+        padding: 0 1rem;
+    }
+}
+
+// Default styles
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, 
+html {
+    height: 100vh;
+    background-color: $veryLightGrey;
+    font-size: $body;
+    font-weight: $body-weight;
+    line-height: $body-LH;
+    overflow-x: hidden;
+}
+

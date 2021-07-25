@@ -1,0 +1,147 @@
+// Import global SCSS-including all scss files
+@import '../../../scss/global.scss';
+
+
+// Styling all projects
+.projects {
+    margin: 5rem 0;
+
+    @include respond(tab-land) {
+        margin: 3rem 0;
+    }
+    // Easybank project styling start
+
+        // Easybank template img
+        .easyBank-img {
+            grid-column: 1/1;
+            grid-row: 1/1;
+            max-width: 100%;
+            background-image: url('./images/eayBank_img.webp');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            @include respond(tab-land) {
+                grid-column: 1/1;
+                grid-row: 1/1;
+            }
+        }
+
+        .easyBank-description {
+            grid-column: 2/2;
+            grid-template-rows: 1/1;
+
+            @include respond(tab-land) {
+                grid-column: 1/1;
+                grid-row: 2/2;
+            }
+        
+    }
+    // Easybank project styling end!
+
+    // Loopstudio project styling start
+    .loopstudio-img {
+        grid-column: 2/2;
+        grid-row: 1/1;
+        max-width: 100%;
+        background-image: url('./images/loopstudio_img.webp');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @include respond(tab-land) {
+            grid-column: 1/1;
+            grid-row: 1/1;
+        }
+    }
+
+    .loopstudio-description {
+        grid-column: 1/1;
+        grid-template-rows: 1/1;
+
+        @include respond(tab-land) {
+            grid-column: 1/1;
+            grid-row: 2/2;
+        }
+    }
+    // Loopstudio project styling end!
+
+    // Audiophile styling start!
+    .audiophile-img {
+        grid-column: 1/1;
+        grid-row: 1/1;
+        max-width: 100%;
+        background-image: url('./images/audiophile_img.webp');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+    }
+
+    .audiophile-description {
+        grid-column: 2/2;
+        grid-template-rows: 1/1;
+
+        @include respond(tab-land) {
+            grid-column: 1/1;
+            grid-row: 2/2;
+        }
+    }
+    // Audiophile project styling end!
+
+    // Contact-me
+    &__contact-me {
+        display: grid;
+        grid-template-columns: 325px 1fr 175px;
+        grid-template-rows: auto;
+        margin-top: 5rem;
+
+        @include respond(tablet) {
+            grid-template-columns: 1fr;
+        }
+
+        h3 {
+            grid-column: 1/1;
+            grid-row: 1/1;
+            color: $darkBlue;
+            font-size: $H3;
+            font-family: $ibarra;
+            font-weight: $H2-weight;
+            letter-spacing: $H3-LS; 
+
+            @include respond(tablet) {
+                align-self: center;
+                text-align: center;
+                margin-bottom: 2.062rem;
+            }
+        }
+
+        hr {
+            grid-column: 2/3;
+            grid-row: 1/1;
+            align-self: center;
+
+            
+            @include respond(tablet) {
+                display: none;
+            }
+        }
+
+        #btn {
+            align-self: center;
+            justify-self: end;
+            grid-column: 3/3;
+            grid-row: 1/1;
+            font-size: 0.6rem;
+            padding: 0.325rem 2.137rem;
+
+            @include respond(tablet) {
+                grid-column: 1/1;
+                grid-row: 2/2;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+    // Contact-me end!
+}

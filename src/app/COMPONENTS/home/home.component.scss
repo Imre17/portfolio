@@ -1,0 +1,139 @@
+// Import global SCSS-including all scss files
+@import '../../../scss/global.scss';
+
+// Styling home component
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    background-image: linear-gradient(rgba(221,205,172,1) 0%, rgba(192,210,237,1) 99%);
+    position: relative;
+
+    // Responsive hero
+    @include respond(desktop) {
+        grid-template-columns: 100%;       
+    }
+
+    @include respond(tab-land) {
+        display: block;
+        padding: 0;
+    }
+    
+    // Hero Image styling
+    &__image {
+        grid-column: 2/2;
+        grid-row: 1/1;
+        justify-self: end;
+        width: 40.625rem;
+        height: 62.5rem;
+        background-image: url('./images/hero_img.png'), url('./images/abstract_gradient.svg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        // Responsive hero image
+        @include respond(desktop) {
+            grid-column: 1/1;       
+            grid-row: 1/1;
+        }
+        
+        @include respond(tab-land) {
+            grid-column: 1/1;
+            background-image: url('./images/hero_img.png');
+            max-width: 100%;
+            filter: blur(0.125rem);
+            position: relative;
+            z-index: 0;
+        }
+
+        
+        @include respond(tablet) {
+            background-position: center center;
+        }
+        
+    }
+    
+    // Hero description
+    &__description {
+        grid-column: 1/2;
+        grid-row: 1/1;
+        margin-top: 12.5rem;
+        z-index: 1;
+
+        // Responsive description
+        @include respond(tab-land) {
+            border: 2px solid $darkBlue;
+            width: 90%;
+            background-color: rgba($veryLightGrey, 0.4);
+            padding: 2rem;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        @include respond(tablet) {
+            text-align: center;
+        }
+        
+        @include respond(phone) {
+            margin-top: 10rem;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            color: $darkBlue;
+            font-family: $ibarra;
+            font-size: $H1;
+            font-weight: $H1-weight;
+            line-height: $H1-LH;
+            letter-spacing: $H1-LS;
+
+            // Manualy resize
+            @media (max-width: 1612px) {
+                width: 25rem;
+                font-size: $H2;
+            }
+
+            @include respond(tab-land) {
+                width: 100%;
+            }
+
+            @include respond(phone) {
+                font-size: $H3;
+            }
+
+            span {
+                color: $slightDesaturatedCyan;
+                font-family: $public-sans;
+            }
+        }
+
+        #btn {
+            margin-top: 2.812rem;
+        }
+
+        // Social buttons
+        .social {
+           margin-top: 6.25rem;
+
+           @include respond(phone) {
+               margin-top: 2rem;
+           }
+
+           a {
+               color: $darkBlue;
+               font-size: 1.5rem;
+
+               &:not(:first-child) {
+                   margin-left: 3.75rem;
+               }
+
+               &:hover {
+                   color: $slightDesaturatedCyan;
+               }
+           }
+        }
+    }
+}

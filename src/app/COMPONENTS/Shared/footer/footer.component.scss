@@ -1,0 +1,82 @@
+// Import global SCSS-including all scss files
+@import '../../../../scss/global.scss';
+
+// Footer styling start!
+.footer {
+    background-color: $grayishDarkBlue;
+    display: grid;
+    grid-template-columns: 5rem 1fr 165px;
+    grid-template-rows: auto;
+    padding: 0 0.8rem;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @include respond(tablet) {
+        grid-template-columns: 1fr;
+        padding: 50px 0;
+    }
+
+    // Logo styling
+    &__logo {
+        max-width: 4.5rem;
+
+        @include respond(tablet) {
+            grid-column: 1/1;
+            grid-row: 1/1;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+    }
+
+    // Lists items styling
+    &__nav-lists {
+        align-self: center;
+        margin-bottom: 0;
+
+        @include respond(tablet) {
+            grid-column: 1/1;
+            grid-row: 2/2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lists {
+            color: $veryLightGrey;
+            margin-left: 45px;
+
+            @include respond(tablet) {
+                margin-left: 0;
+                padding-bottom: 30px;
+            }
+
+            &:hover {
+                color: $slightDesaturatedCyan;
+             }
+        }
+    }
+
+    // Social styling
+    &__social {
+        align-self: center;
+        justify-self: center;
+
+        a {
+           color: $veryLightGrey;
+           font-size: 1.5rem;
+           
+            &:not(:first-child) {
+                margin-left: 15px;
+            }
+
+            &:hover {
+               color: $slightDesaturatedCyan;
+            }
+        }
+    }
+}
+
+// Footer styling end!

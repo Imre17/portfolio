@@ -1,0 +1,34 @@
+<!-- Nav-bar start -->
+<nav class="nav res-container" [class.open]="toggle">
+    
+    <a routerLink="/"><img src="../../../../assets/logo.svg" alt="logo" class="nav__logo"></a>
+    
+    <!-- navbar-lists desktop view -->
+    <ul *ngIf="scrWidth > 750; else showToggle" 
+        class="nav-lists">
+        <li class="nav-lists__lists"><a class="items" routerLink="/">Home</a></li>
+        <li class="nav-lists__lists"><a class="items" routerLink="about">About</a></li>
+        <li class="nav-lists__lists"><a class="items" routerLink="projects">Projects</a></li>
+        <li class="nav-lists__lists"><a class="items" routerLink="contact-me">Contact Me</a></li>
+    </ul>
+
+    <!-- burger-menu button -->
+    <ng-template #showToggle>
+        <a class="nav__toggle res-container" (click)="onToggle()">
+            <span *ngFor="let line of lines"></span>
+        </a>
+    </ng-template>   
+
+</nav>
+<!-- Nav-bar end -->
+
+<!-- Mobile-menu -->
+<ng-container *ngIf="scrWidth < 750 && toggle">
+    <div (click)="onToggle()" class="mobile-menu">
+        <a class="items" routerLink="/">Home</a>
+        <a class="items" routerLink="about">About</a>
+        <a class="items" routerLink="projects">Projects</a>
+        <a class="items" routerLink="contact-me">Contact Me</a>
+    </div>
+    <div (click)="onToggle()" class="overlay"></div>
+</ng-container>

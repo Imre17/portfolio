@@ -1,0 +1,300 @@
+// Import global SCSS-including all scss files
+@import '../../../scss/global.scss';
+
+// Styling About-me
+.about {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    // Manualy applied the mediaQuery
+    @media (max-width: 60.9375rem) {
+        align-items: center;
+        flex-direction: column;    
+        margin-bottom: 3rem;   
+    }
+        
+    // THe box-1, 2, and 3 is styled for the image hover
+    .box-1 {
+        background-color: rgba($slightDesaturatedCyan, 1);
+        width: 23.75rem;
+        height: 28.375rem;
+        position: relative;
+
+        @include respond(phone) {
+            width: 18.75rem;
+        }
+        
+        .box-2 {
+            background-color: rgba($darkBlue, 1);
+            width: 23.75rem;
+            height: 30.375rem;
+            position: absolute;
+            left: 0;
+            top: -0.9375rem;
+            transition: all 0.3s ease-in-out;
+
+            @include respond(phone) {
+                width: 18.75rem;
+            }
+
+            .box-3 {
+                background-color: $veryLightGrey;
+                width: 23.75rem;
+                height: 33.375rem;
+                position: relative;
+                position: absolute;
+                left: 0;
+                top: -0.9375rem;
+                box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                @include respond(phone) {
+                    width: 18.75rem;
+                }
+
+                .about-me-img {
+                    height: 100%;
+                    background-image: url('./images/about_me_img.png');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    .about-me-description {
+        width: 24.375rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 7.1875rem;
+
+        
+        @include respond(desktop) {
+            margin-right: 0px;
+        }
+
+        @media (max-width: 60.9375rem) {
+            width: 70%;
+            margin-top: 6rem;    
+            align-items: center;
+        }
+        
+        @include respond(tablet) {
+            width: 100%;
+        }
+
+
+        h2 {
+            color: $darkBlue;
+            font-size: $H2;
+            font-family: $ibarra;
+            font-weight: $H2-weight;
+            letter-spacing: $H2-LS;
+            margin-bottom: 2rem;
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            color: $grayishDarkBlue;
+            font-size: $body;
+            font-weight: $body-weight;
+            line-height: 1.6rem;
+
+            @media (max-width: 60.9375rem) {
+                text-align: left;
+            }
+
+            @include respond(phone) {
+                font-size: 0.8rem;
+            }
+        }
+
+        #btn {
+            width: 14.375rem;
+            text-align: center;
+            padding-left: 1.437rem;
+            padding-right: 1.437rem;
+            margin-top: 2rem;
+
+            @include respond(phone) {
+                width: 13.125rem;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+}
+
+//Skills styling!
+.skills {
+    margin: 2rem 0;
+    text-align: center;
+
+
+    h1 {
+        display: inline-block;
+        color: $darkBlue;
+        font-size: $H1;
+        font-weight: $H1-weight;
+        font-family: $ibarra;
+        letter-spacing: $H1-LS;
+        text-align: center;
+        position: relative;
+
+        @include respond(tablet) {
+            font-size: 2rem
+        }
+
+        &::after {
+            content: '';
+            width: 90%;
+            height: 0.125rem;
+            background-color: $slightDesaturatedCyan;
+            position: absolute;
+            top: 4.1875rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include respond(tablet) {
+                top: 3.1875rem;
+            }
+        }
+    }
+
+
+    &__box {
+        margin-top: 3rem;
+        border: 1px solid transparent;
+        box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(0.90);
+        }
+
+        .HTML {
+            margin-top: 5rem;
+    
+            h2 {
+                color: rgb(227, 76, 38)
+            }
+    
+             
+            .progress-bar {
+                width: 80%;
+            }
+        }
+    
+        .CSS {
+            margin-top: 2rem;
+    
+            h2 {
+                color: rgb(38, 77, 228);
+            }
+    
+            .progress-bar {
+                width: 80%;
+            }
+        }
+    
+        .JS {
+            margin-top: 2rem;
+            
+            h2 {
+                color: rgb(245, 222, 25);
+            }
+      
+            .progress-bar {
+                width: 60%;
+            }
+        }
+        
+        .SCSS {
+            margin-top: 2rem;
+            
+            h2 {
+                color: rgb(198, 83, 140);
+            }
+    
+            .progress-bar {
+                width: 75%;
+            }
+        }
+    
+        .ANGULAR {
+            margin-top: 2rem;
+            
+            h2 {
+                color: rgb(221, 0, 49);
+            }
+    
+    
+            .progress-bar {
+                width: 45%;
+            }
+        }
+    
+        .TYPESCRIPT {
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            
+            h2 {
+                color: rgb(43, 116, 137);
+            }
+    
+    
+            .progress-bar {
+                width: 35%;
+            }
+        }
+    }
+}
+
+// The title=h1, span, and progress are applied for all related tags in component about-me!
+.title {
+    color: $grayishDarkBlue;
+    font-family: $ibarra;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.157rem;
+    text-transform: capitalize;
+    text-align: left;
+
+    @include respond(tablet) {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+span {
+    color: $veryLightGrey;  
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    @include respond(tablet) {
+        font-size: 0.8rem;
+    }
+}
+
+.progress {
+
+    @include respond(tablet) {
+        height: 0.75rem;
+    }
+}
+
+.progress-bar {
+    background-color: $grayishDarkBlue;
+}

@@ -1,0 +1,33 @@
+// styling the link buttons
+.items {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $darkBlue;
+    font-family: $public-sans;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    transition: 0.1s;
+
+    &:hover {
+        color: $slightDesaturatedCyan;
+    }
+}
+
+// Default buttons
+.default_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: $darkBlue;
+    padding: 0.625rem 2.437rem;
+    font-family: $public-sans;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09375rem;
+    border: 0.09375rem solid $grayishDarkBlue;
+    cursor: pointer;
+
+    &:hover {
+        color: $lightGrey;
+        background-color: $darkBlue;
+    }
+}

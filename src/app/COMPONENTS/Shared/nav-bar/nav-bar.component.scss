@@ -1,0 +1,115 @@
+// Import global SCSS-including all scss files
+@import '../../../../scss/global.scss';
+
+// Styling navigation-bar
+.nav {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+
+    &__logo {
+        max-width: 4.5rem;
+    }
+
+    .nav-lists {
+        display: flex;
+        flex-basis: 45%;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+    // Ading resizing 
+        @include respond(desktop) {
+            flex-basis: 60%;
+        }
+
+        @include respond(tab-land) {
+            flex-basis: 70%;
+        }
+
+        &__lists {
+            list-style: none;
+        }
+    }
+
+    // Burger menu
+    &__toggle {
+
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    
+        > span {
+          display: block;
+          width: 1.5rem;
+          height: 0.125rem;
+          background-color: $darkBlue;
+          transform-origin: 1.9px 1.6px;
+          transition: all 0.2s ease-in-out;
+    
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+          
+        }
+      }
+
+    // Toggeling when open class is added
+    &.open {
+
+        .nav__toggle {
+
+            > span:first-child {
+                transform: rotate(45deg);
+              }
+        
+              > span:nth-child(2) {
+                opacity: 0;
+              }
+              > span:last-child {
+                transform: rotate(-45deg);
+              }
+        }
+    }
+}
+
+// Mobile-menu
+.mobile-menu {
+    background-color: $lightGrey;
+    margin: 1.5rem 3rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    
+    @include respond(phone) {
+        margin: 1.5rem 1rem;
+    }
+  
+    .items {
+        margin-top: 1.5rem;
+        &:last-child {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient($darkBlue, transparent);
+    z-index: 1;
+}
+
+
+
