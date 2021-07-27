@@ -320,19 +320,17 @@ hr {
 }
 
 .skills {
-  margin: 2rem 0;
-  text-align: center;
+  margin: 3rem 0;
 }
 
 .skills h1 {
-  display: inline-block;
+  margin-bottom: 2rem;
   color: #203a4c;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   font-weight: 700;
   font-family: "Ibarra Real Nova", serif;
-  letter-spacing: 0.02813rem;
+  letter-spacing: 0.0225rem;
   text-align: center;
-  position: relative;
 }
 
 @media (max-width: 46.875rem) {
@@ -341,148 +339,93 @@ hr {
   }
 }
 
-.skills h1::after {
-  content: '';
+.skills__box .html-css .fa-html5 {
+  color: #ff0000;
+  margin-right: 0.3125rem;
+}
+
+.skills__box .html-css .fa-css3-alt {
+  color: #0000ff;
+  margin-left: 0.3125rem;
+}
+
+.skills__box .html-css .progress-bar {
+  width: 85%;
+  background-color: #33323d;
+}
+
+.skills__box .sass .fa-sass {
+  color: #800080;
+}
+
+.skills__box .sass .progress-bar {
+  width: 70%;
+  background-color: #33323d;
+}
+
+.skills__box .bootstrap .fa-bootstrap {
+  color: #8212FA;
+}
+
+.skills__box .bootstrap .progress-bar {
   width: 90%;
-  height: 0.125rem;
-  background-color: #5fb4a2;
-  position: absolute;
-  top: 4.1875rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  background-color: #33323d;
 }
 
-@media (max-width: 46.875rem) {
-  .skills h1::after {
-    top: 3.1875rem;
-  }
+.skills__box .javaScript .fa-js {
+  color: #FCDC00;
 }
 
-.skills__box {
-  margin-top: 3rem;
-  border: 1px solid transparent;
-  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.skills__box .javaScript .progress-bar {
+  width: 50%;
+  background-color: #33323d;
 }
 
-.skills__box:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+.skills__box .angular .fa-angular {
+  color: #C3002F;
 }
 
-.skills__box .HTML {
-  margin-top: 5rem;
-}
-
-.skills__box .HTML h2 {
-  color: #e34c26;
-}
-
-.skills__box .HTML .progress-bar {
-  width: 80%;
-}
-
-.skills__box .CSS {
-  margin-top: 2rem;
-}
-
-.skills__box .CSS h2 {
-  color: #264de4;
-}
-
-.skills__box .CSS .progress-bar {
-  width: 80%;
-}
-
-.skills__box .JS {
-  margin-top: 2rem;
-}
-
-.skills__box .JS h2 {
-  color: #f5de19;
-}
-
-.skills__box .JS .progress-bar {
-  width: 60%;
-}
-
-.skills__box .SCSS {
-  margin-top: 2rem;
-}
-
-.skills__box .SCSS h2 {
-  color: #c6538c;
-}
-
-.skills__box .SCSS .progress-bar {
-  width: 75%;
-}
-
-.skills__box .ANGULAR {
-  margin-top: 2rem;
-}
-
-.skills__box .ANGULAR h2 {
-  color: #dd0031;
-}
-
-.skills__box .ANGULAR .progress-bar {
-  width: 45%;
-}
-
-.skills__box .TYPESCRIPT {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-}
-
-.skills__box .TYPESCRIPT h2 {
-  color: #2b7489;
-}
-
-.skills__box .TYPESCRIPT .progress-bar {
+.skills__box .angular .progress-bar {
   width: 35%;
+  background-color: #33323d;
 }
 
 .title {
-  color: #33323d;
-  font-family: "Ibarra Real Nova", serif;
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 0.157rem;
-  text-transform: capitalize;
-  text-align: left;
+  font-size: 1.5rem;
 }
 
-@media (max-width: 46.875rem) {
+@media (max-width: 35rem) {
   .title {
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 1.2rem;
   }
 }
 
-span {
-  color: #fafafa;
-  font-size: 1.2rem;
-  font-weight: 400;
+.procent {
+  float: right;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Public Sans", sans-serif;
 }
 
-@media (max-width: 46.875rem) {
-  span {
+@media (max-width: 35rem) {
+  .procent {
     font-size: 0.8rem;
   }
 }
 
-@media (max-width: 46.875rem) {
-  .progress {
-    height: 0.75rem;
-  }
+.procent::after {
+  content: '';
+  clear: both;
 }
 
-.progress-bar {
-  background-color: #33323d;
+.progress {
+  height: 1.25rem;
+  margin: 0.8rem 0;
+}
+
+@media (max-width: 35rem) {
+  .progress {
+    height: 1rem;
+  }
 }
 /*# sourceMappingURL=about.component.css.map */

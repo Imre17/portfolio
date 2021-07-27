@@ -31,13 +31,16 @@
     }
 
     .social {
-        align-self: center;
-        justify-self: center;
+        margin-top: 2rem;
+
+        @include respond(tab-land) {
+            text-align: center;
+        }
 
         a {
            color: $darkBlue;
            font-size: 1.5rem;
-           
+
             @include respond(phone) {
                 font-size: 1.2rem;
             }
@@ -99,6 +102,10 @@
             width: 12.5rem;
             margin: 3rem 0;
 
+            @include respond(tab-land) {
+                margin: 3rem auto;
+            }
+
             @include respond(tablet) {
                 font-size: 0.7rem;
             }
@@ -108,17 +115,14 @@
 
 h1 {
     color: $darkBlue;
-    font-size: $H1;
+    font-size: $H2;
     font-family: $ibarra;
-    font-weight: $H1-weight;
-    letter-spacing: $H1-LS;
-
-    @include respond(desktop) {
-        font-size: 2.5rem;
-    }
+    font-weight: $H2-weight;
+    letter-spacing: $H2-LS;
 
     @include respond(tab-land) {
         margin-bottom: 2rem;
+        text-align: center;
     }
     
     @include respond(phone) {

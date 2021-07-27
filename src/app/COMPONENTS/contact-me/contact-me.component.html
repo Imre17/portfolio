@@ -31,13 +31,34 @@
             method="POST">
 
             <label for="name">Name</label>
-            <input class="input-field" type="text" id="name" name="name" placeholder="John Smith">
+
+            <input
+            class="input-field" 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Full name" 
+            required>
 
             <label for="email">Email</label>
-            <input class="input-field" type="email" id="email" name="email" placeholder="email@example.com">
+
+            <input 
+            class="input-field" 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="youremail@example.com" required>
 
             <label for="message">Message</label>
-            <textarea class="input-field" name="message" id="message" cols="30"  placeholder="How can I help?"></textarea>
+            
+            <textarea 
+            class="input-field" 
+            name="message" 
+            id="message" 
+            cols="30"  
+            placeholder="How can I help?" 
+            required
+            ></textarea>
 
             <button type="submit" class="default_btn" id="btn">Send message</button>
         </form>

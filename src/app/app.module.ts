@@ -30,7 +30,7 @@ import { MovieAppComponent } from './COMPONENTS/projects/movie-app/movie-app.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

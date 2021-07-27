@@ -138,163 +138,128 @@ hr {
 
 //Skills styling!
 .skills {
-    margin: 2rem 0;
-    text-align: center;
-
-
+    margin: 3rem 0;
+    
+    
     h1 {
-        display: inline-block;
+        margin-bottom: 2rem;
         color: $darkBlue;
-        font-size: $H1;
-        font-weight: $H1-weight;
+        font-size: $H2;
+        font-weight: $H2-weight;
         font-family: $ibarra;
-        letter-spacing: $H1-LS;
+        letter-spacing: $H2-LS;
         text-align: center;
-        position: relative;
+
 
         @include respond(tablet) {
             font-size: 2rem
         }
-
-        &::after {
-            content: '';
-            width: 90%;
-            height: 0.125rem;
-            background-color: $slightDesaturatedCyan;
-            position: absolute;
-            top: 4.1875rem;
-            left: 50%;
-            transform: translateX(-50%);
-
-            @include respond(tablet) {
-                top: 3.1875rem;
-            }
-        }
     }
-
 
     &__box {
-        margin-top: 3rem;
-        border: 1px solid transparent;
-        box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
 
-        &:hover {
-            transform: scale(0.90);
+        .html-css {
+            .fa-html5 {
+                color: #ff0000;
+                margin-right: 0.3125rem;
+            }
+
+            .fa-css3-alt {
+                color: #0000ff;
+                margin-left: 0.3125rem;
+            }
+
+            .progress-bar {
+                width: 85%;
+                background-color: $grayishDarkBlue;
+                // background: linear-gradient(90deg, rgba(121,9,9,1) 29%, rgba(0,14,255,1) 100%);
+            }
         }
 
-        .HTML {
-            margin-top: 5rem;
-    
-            h2 {
-                color: rgb(227, 76, 38)
+        .sass {
+            .fa-sass {
+                color: #800080;
             }
-    
-             
+
             .progress-bar {
-                width: 80%;
+                width: 70%;
+                background-color: $grayishDarkBlue;
+                // background: linear-gradient(90deg, rgba(128,0,128,1) 30%, rgba(0,14,255,0) 50%, rgba(128,0,128,1) 70%);
             }
         }
-    
-        .CSS {
-            margin-top: 2rem;
-    
-            h2 {
-                color: rgb(38, 77, 228);
+
+        .bootstrap {
+            .fa-bootstrap {
+                color: #8212FA;    
             }
-    
+
             .progress-bar {
-                width: 80%;
+                width: 90%;
+                background-color: $grayishDarkBlue;
+                // background: linear-gradient(90deg, rgba(130,18,250,1) 24%, rgba(181,112,255,1) 79%);
             }
         }
-    
-        .JS {
-            margin-top: 2rem;
-            
-            h2 {
-                color: rgb(245, 222, 25);
+
+        .javaScript {
+            .fa-js {
+                color: #FCDC00;
             }
-      
+
             .progress-bar {
-                width: 60%;
+                width: 50%;
+                background-color: $grayishDarkBlue;
+                // background: linear-gradient(90deg, rgba(252,220,0,1) 25%, rgba(115,111,84,1) 63%);
             }
         }
-        
-        .SCSS {
-            margin-top: 2rem;
-            
-            h2 {
-                color: rgb(198, 83, 140);
+
+        .angular {
+            .fa-angular {
+                color: #C3002F;
             }
-    
-            .progress-bar {
-                width: 75%;
-            }
-        }
-    
-        .ANGULAR {
-            margin-top: 2rem;
-            
-            h2 {
-                color: rgb(221, 0, 49);
-            }
-    
-    
-            .progress-bar {
-                width: 45%;
-            }
-        }
-    
-        .TYPESCRIPT {
-            margin-top: 2rem;
-            margin-bottom: 5rem;
-            
-            h2 {
-                color: rgb(43, 116, 137);
-            }
-    
-    
+
             .progress-bar {
                 width: 35%;
+                background-color: $grayishDarkBlue;
+                // background: linear-gradient(90deg, rgba(195,0,47,1) 26%, rgba(193,49,81,1) 89%);
             }
         }
-    }
-}
 
-// The title=h1, span, and progress are applied for all related tags in component about-me!
+    }
+    
+    
+}
+// Procent and title
 .title {
-    color: $grayishDarkBlue;
-    font-family: $ibarra;
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: 0.157rem;
-    text-transform: capitalize;
-    text-align: left;
+    font-size: 1.5rem;
 
-    @include respond(tablet) {
-        font-size: 1.4rem;
-        text-align: center;
+    @include respond(phone) {
+        font-size: 1.2rem;
     }
 }
 
-span {
-    color: $veryLightGrey;  
-    font-size: 1.2rem;
-    font-weight: 400;
+.procent {
+    float: right;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: $public-sans;
 
-    @include respond(tablet) {
+    @include respond(phone) {
         font-size: 0.8rem;
     }
-}
-
-.progress {
-
-    @include respond(tablet) {
-        height: 0.75rem;
+    
+    // clearfix
+    &::after {
+        content: '';
+        clear: both;
     }
 }
 
-.progress-bar {
-    background-color: $grayishDarkBlue;
+// Progress bar
+.progress {
+    height: 1.25rem;
+    margin: 0.8rem 0;
+
+    @include respond(phone) {
+        height: 1rem;
+    }
 }

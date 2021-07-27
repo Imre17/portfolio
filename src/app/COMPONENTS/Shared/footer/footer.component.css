@@ -165,11 +165,11 @@ $breakpoint argument choises:
   .footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding: 50px 0;
+    padding: 1.875rem 0;
   }
 }
 
-.footer__logo {
+.footer__logo img {
   max-width: 4.5rem;
 }
 
@@ -180,7 +180,7 @@ $breakpoint argument choises:
     -ms-grid-row: 1;
     grid-row: 1/1;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 1.5625rem;
   }
 }
 

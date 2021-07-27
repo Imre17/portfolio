@@ -195,11 +195,13 @@ $breakpoint argument choises:
 }
 
 .get-in-touch .social {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 56.25rem) {
+  .get-in-touch .social {
+    text-align: center;
+  }
 }
 
 .get-in-touch .social a {
@@ -292,6 +294,12 @@ $breakpoint argument choises:
   margin: 3rem 0;
 }
 
+@media (max-width: 56.25rem) {
+  .contact-me .form #btn {
+    margin: 3rem auto;
+  }
+}
+
 @media (max-width: 46.875rem) {
   .contact-me .form #btn {
     font-size: 0.7rem;
@@ -300,21 +308,16 @@ $breakpoint argument choises:
 
 h1 {
   color: #203a4c;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   font-family: "Ibarra Real Nova", serif;
   font-weight: 700;
-  letter-spacing: 0.02813rem;
-}
-
-@media (max-width: 75rem) {
-  h1 {
-    font-size: 2.5rem;
-  }
+  letter-spacing: 0.0225rem;
 }
 
 @media (max-width: 56.25rem) {
   h1 {
     margin-bottom: 2rem;
+    text-align: center;
   }
 }
 

@@ -15,18 +15,20 @@
 
     @include respond(tablet) {
         grid-template-columns: 1fr;
-        padding: 50px 0;
+        padding: 1.875rem 0;
     }
 
     // Logo styling
     &__logo {
-        max-width: 4.5rem;
+        img {
+            max-width: 4.5rem;
+        }
 
         @include respond(tablet) {
             grid-column: 1/1;
             grid-row: 1/1;
             margin: 0 auto;
-            padding-bottom: 30px;
+            padding-bottom: 1.5625rem;
         }
     }
 
