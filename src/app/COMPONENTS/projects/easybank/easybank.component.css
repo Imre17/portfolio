@@ -47,6 +47,150 @@ $breakpoint argument choises:
   background-color: #203a4c;
 }
 
+.tools_btn {
+  display: inline-block;
+  color: #5fb4a2;
+  margin-bottom: 2rem;
+  padding: 0.125rem 1.0625rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+@media (max-width: 75rem) {
+  .tools_btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 46.875rem) {
+  .tools_btn {
+    font-size: 0.8rem;
+  }
+}
+
+.tools_btn:hover {
+  background-color: #203a4c;
+  color: #eaeaeb;
+}
+
+.prew_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: #203a4c;
+  font-size: 1.6rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  letter-spacing: 0.0225rem;
+  position: relative;
+  padding-left: 1.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 35rem) {
+  .prew_btn {
+    font-size: 1rem;
+  }
+}
+
+.prew_btn:hover {
+  padding-left: 2.5rem;
+}
+
+.prew_btn i {
+  position: absolute;
+  top: 1.875rem;
+  left: 0;
+}
+
+.prew_btn span {
+  color: #33323d;
+  font-size: 0.8rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 35rem) {
+  .prew_btn span {
+    font-size: 0.6rem;
+  }
+}
+
+.next_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: #203a4c;
+  font-size: 1.6rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  letter-spacing: 0.0225rem;
+  position: relative;
+  padding-right: 1.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 35rem) {
+  .next_btn {
+    font-size: 1rem;
+  }
+}
+
+.next_btn:hover {
+  padding-right: 2.5rem;
+}
+
+.next_btn i {
+  position: absolute;
+  top: 1.875rem;
+  right: 0;
+}
+
+.next_btn span {
+  color: #33323d;
+  font-size: 0.8rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 35rem) {
+  .next_btn span {
+    font-size: 0.6rem;
+  }
+}
+
 .pr-gl-desc {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -147,23 +291,25 @@ $breakpoint argument choises:
 }
 
 .easyBank-header {
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
 .easyBank-header .easyBank-header-img {
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 46.875rem) {
   .easyBank-header .easyBank-header-img {
-    height: 400px;
+    height: 25rem;
   }
 }
 
 @media (max-width: 35rem) {
   .easyBank-header .easyBank-header-img {
-    height: 300px;
+    height: 18.75rem;
   }
 }
 
@@ -173,5 +319,263 @@ $breakpoint argument choises:
   background-image: url("../../../../assets/easyBank/full_page_easy_bank.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.easyBank-header .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 56.25rem) {
+  .easyBank-header .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.easyBank-header .description .requirements {
+  width: 22.8125rem;
+}
+
+@media (max-width: 1335px) {
+  .easyBank-header .description .requirements {
+    width: 21.8125rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .description .requirements {
+    width: 19.8125rem;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .easyBank-header .description .requirements {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.easyBank-header .description .requirements h1 {
+  color: #203a4c;
+  font-size: 3.125rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  letter-spacing: 0.02813rem;
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .description .requirements h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .description .requirements h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.easyBank-header .description .requirements p {
+  color: #33323d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .description .requirements p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .description .requirements p {
+    font-size: 0.8rem;
+  }
+}
+
+.easyBank-header .description .requirements span {
+  margin: 0.9375rem;
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .description .requirements span {
+    margin: 0.537rem;
+  }
+}
+
+.easyBank-header .description .requirements #btn {
+  font-size: 0.7rem;
+  padding: 0.525rem 1.437rem;
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .description .requirements #btn {
+    font-size: 0.6rem;
+    padding: 0.225rem 1.037rem;
+  }
+}
+
+.easyBank-header .description .project-background {
+  width: 40.3125rem;
+}
+
+@media (max-width: 1335px) {
+  .easyBank-header .description .project-background {
+    width: 35.8125rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .description .project-background {
+    width: 25.8125rem;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .easyBank-header .description .project-background {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.easyBank-header .description .project-background h2 {
+  color: #203a4c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: 0.0225rem;
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .description .project-background h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .easyBank-header .description .project-background h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .description .project-background h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.easyBank-header .description .project-background p {
+  color: #33323d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .description .project-background p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .description .project-background p {
+    font-size: 0.8rem;
+  }
+}
+
+.easyBank-header .static-previews h2 {
+  text-align: center;
+  color: #203a4c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: 0.0225rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 75rem) {
+  .easyBank-header .static-previews h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .static-previews h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.easyBank-header .static-previews .static-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .static-previews .static-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.easyBank-header .static-previews .static-img .img-1 {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../../../../assets/easyBank/bottom_easy_bank.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+  margin-right: 2rem;
+}
+
+@media (max-width: 46.875rem) {
+  .easyBank-header .static-previews .static-img .img-1 {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.easyBank-header .static-previews .static-img .img-2 {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../../../../assets/easyBank/easy_bank_mid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.easyBank-header .buttons {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.0625rem solid rgba(51, 50, 61, 0.3);
+  border-bottom: 0.0625rem solid rgba(51, 50, 61, 0.3);
 }
 /*# sourceMappingURL=easybank.component.css.map */
