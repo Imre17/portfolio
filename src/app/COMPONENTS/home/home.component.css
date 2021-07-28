@@ -147,6 +147,7 @@ $breakpoint argument choises:
 }
 
 .hero {
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -181,7 +182,7 @@ $breakpoint argument choises:
       justify-self: end;
   width: 40.625rem;
   height: 62.5rem;
-  background-image: url("./images/hero_img.png"), url("./images/abstract_gradient.svg");
+  background-image: url("../../../assets/home-img/hero_img.png"), url("../../../assets/svg/abstract_gradient.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -200,7 +201,7 @@ $breakpoint argument choises:
   .hero__image {
     -ms-grid-column: 1;
     grid-column: 1/1;
-    background-image: url("./images/hero_img.png");
+    background-image: url("../../../assets/home-img/hero_img.png");
     max-width: 100%;
     -webkit-filter: blur(0.125rem);
             filter: blur(0.125rem);

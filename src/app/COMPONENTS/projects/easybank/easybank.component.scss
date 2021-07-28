@@ -1,0 +1,26 @@
+@import '../../../../scss/global.scss';
+
+.easyBank-header {
+    margin-top: 3rem;
+    
+    .easyBank-header-img {
+        width: 100%;
+        height: 500px;
+
+        @include respond(tablet) {
+            height: 400px;
+        }
+        
+        @include respond(phone) {
+            height: 300px;
+        }
+
+        .top-img {
+            max-width: 100%;
+            height: 100%;
+            background-image: url('../../../../assets/easyBank/full_page_easy_bank.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

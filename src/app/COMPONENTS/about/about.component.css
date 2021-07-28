@@ -222,7 +222,7 @@ $breakpoint argument choises:
 
 .about .box-1 .box-2 .box-3 .about-me-img {
   height: 100%;
-  background-image: url("./images/about_me_img.png");
+  background-image: url("../../../assets/about-img/about_me_img.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

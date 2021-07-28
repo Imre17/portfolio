@@ -3,6 +3,7 @@
 
 // Styling home component
 .hero {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -26,7 +27,7 @@
         justify-self: end;
         width: 40.625rem;
         height: 62.5rem;
-        background-image: url('./images/hero_img.png'), url('./images/abstract_gradient.svg');
+        background-image: url('../../../assets/home-img/hero_img.png'), url('../../../assets/svg/abstract_gradient.svg');
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -39,7 +40,7 @@
         
         @include respond(tab-land) {
             grid-column: 1/1;
-            background-image: url('./images/hero_img.png');
+            background-image: url('../../../assets/home-img/hero_img.png');
             max-width: 100%;
             filter: blur(0.125rem);
             position: relative;
