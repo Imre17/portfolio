@@ -505,11 +505,29 @@ $breakpoint argument choises:
   border-bottom: 0.0625rem solid rgba(51, 50, 61, 0.3);
 }
 
+.res-container {
+  min-height: 100vh;
+  margin-top: 10rem;
+}
+
 h1 {
   font-family: "Public Sans", sans-serif;
 }
 
+@media (max-width: 35rem) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  p {
+    font-size: 1rem;
+  }
+}
+
 a {
+  display: inline-block;
   text-decoration: none;
   color: #33323d;
   font-family: "Public Sans", sans-serif;
@@ -518,6 +536,13 @@ a {
   padding: 0.5rem 1rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media (max-width: 35rem) {
+  a {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 a::before {

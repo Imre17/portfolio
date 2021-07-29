@@ -43,7 +43,14 @@ html {
 }
 
 // H and P tags globaly styling
-
+h1 {
+    color: $darkBlue;
+    font-family: $ibarra;
+    font-size: $H1;
+    font-weight: $H1-weight;
+    line-height: $H1-LH;
+    letter-spacing: $H1-LS;
+}
 h2 {
     color: $darkBlue;
     font-size: $H2;
@@ -80,4 +87,13 @@ p {
     }
 }
 
+// Logo global style
 
+.logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-image: url('../assets/svg/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

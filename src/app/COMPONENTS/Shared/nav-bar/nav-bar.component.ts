@@ -1,4 +1,5 @@
 import { Component, HostListener} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -12,7 +13,7 @@ export class NavBarComponent {
   toggle: boolean =  false
   scrWidth:any;
 
-  constructor() { 
+  constructor(private router: Router) { 
     this.getScreenSize();
   }
   
@@ -26,5 +27,7 @@ export class NavBarComponent {
   onToggle() {
     this.toggle = !this.toggle
   }
+
+
 
 }

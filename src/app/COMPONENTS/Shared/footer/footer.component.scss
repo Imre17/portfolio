@@ -19,10 +19,7 @@
     }
 
     // Logo styling
-    &__logo {
-        img {
-            max-width: 4.5rem;
-        }
+    .logo {
 
         @include respond(tablet) {
             grid-column: 1/1;

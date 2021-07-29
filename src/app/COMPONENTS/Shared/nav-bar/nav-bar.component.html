@@ -1,7 +1,10 @@
 <!-- Nav-bar start -->
-<nav class="nav res-container" [class.open]="toggle">
+<nav 
+[ngStyle]="{}"
+class="nav res-container" 
+[class.open]="toggle">
     
-    <a routerLink="/"><img src="./../../../../assets/svg/logo.svg" alt="logo" class="nav__logo" /></a>
+    <a routerLink="/"><div class="logo"></div></a>
     
     <!-- navbar-lists desktop view -->
     <ul *ngIf="scrWidth > 750; else showToggle" 

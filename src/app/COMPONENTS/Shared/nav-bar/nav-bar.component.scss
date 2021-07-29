@@ -10,10 +10,6 @@
     position: relative;
     z-index: 10;
 
-    &__logo {
-        max-width: 4.5rem;
-    }
-
     .nav-lists {
         display: flex;
         flex-basis: 45%;
@@ -59,17 +55,21 @@
     // Toggeling when open class is added
     &.open {
 
+
         .nav__toggle {
 
             > span:first-child {
                 transform: rotate(45deg);
+                background-color: $lightGrey;
               }
         
               > span:nth-child(2) {
                 opacity: 0;
+                background-color: $lightGrey;
               }
               > span:last-child {
                 transform: rotate(-45deg);
+                background-color: $lightGrey;
               }
         }
     }
@@ -103,7 +103,7 @@
 
 .overlay {
     position: absolute;
-    top: 4.5rem;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;

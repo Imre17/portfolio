@@ -515,7 +515,11 @@ $breakpoint argument choises:
       grid-template-rows: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ddcdac), color-stop(99%, #c0d2ed));
   background-image: linear-gradient(#ddcdac 0%, #c0d2ed 99%);
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 @media (max-width: 75rem) {
@@ -542,7 +546,7 @@ $breakpoint argument choises:
   width: 40.625rem;
   height: 62.5rem;
   background-image: url("../../../assets/home-img/hero_img.png"), url("../../../assets/svg/abstract_gradient.svg");
-  background-position: center center;
+  background-position: center 5vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -556,12 +560,13 @@ $breakpoint argument choises:
   }
 }
 
-@media (max-width: 56.25rem) {
+@media (max-width: 1050px) {
   .hero__image {
     -ms-grid-column: 1;
     grid-column: 1/1;
     background-image: url("../../../assets/home-img/hero_img.png");
-    max-width: 100%;
+    background-position: center top;
+    width: 100%;
     -webkit-filter: blur(0.125rem);
             filter: blur(0.125rem);
     position: relative;
@@ -585,7 +590,7 @@ $breakpoint argument choises:
   z-index: 1;
 }
 
-@media (max-width: 56.25rem) {
+@media (max-width: 1050px) {
   .hero__description {
     border: 2px solid #203a4c;
     width: 90%;
@@ -601,25 +606,16 @@ $breakpoint argument choises:
 
 @media (max-width: 46.875rem) {
   .hero__description {
+    margin-top: 8rem;
     text-align: center;
   }
 }
 
 @media (max-width: 35rem) {
   .hero__description {
-    margin-top: 10rem;
     text-align: center;
     padding: 2rem 0;
   }
-}
-
-.hero__description h1 {
-  color: #203a4c;
-  font-family: "Ibarra Real Nova", serif;
-  font-size: 3.125rem;
-  font-weight: 700;
-  line-height: 3.125rem;
-  letter-spacing: 0.02813rem;
 }
 
 @media (max-width: 1612px) {
@@ -635,9 +631,15 @@ $breakpoint argument choises:
   }
 }
 
+@media (max-width: 46.875rem) {
+  .hero__description h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 35rem) {
   .hero__description h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -646,17 +648,43 @@ $breakpoint argument choises:
   font-family: "Public Sans", sans-serif;
 }
 
+@media (max-width: 46.875rem) {
+  .hero__description h1 span {
+    display: inline-block;
+  }
+}
+
 .hero__description #btn {
   margin-top: 2.812rem;
+}
+
+@media (max-width: 46.875rem) {
+  .hero__description #btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .hero__description #btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
+  }
 }
 
 .hero__description .social {
   margin-top: 6.25rem;
 }
 
+@media (max-width: 46.875rem) {
+  .hero__description .social {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 35rem) {
   .hero__description .social {
-    margin-top: 2rem;
+    font-size: 1.5rem;
   }
 }
 
