@@ -1,7 +1,9 @@
-<app-nav-bar></app-nav-bar>
+<div *ngIf="!hasRoute('/thank-you')">
+    <app-nav-bar></app-nav-bar>
+</div>
 <router-outlet></router-outlet>
 
-<div class="sticky" *ngIf="!hasRoute('/')">
+<div class="sticky" *ngIf="!hasRoute('/') && !hasRoute('/thank-you')">
     <app-footer></app-footer>
 </div>
 
