@@ -12,7 +12,8 @@ import { EasybankComponent } from './components/projects/easybank/easybank.compo
 import { LoopstodioComponent } from './components/projects/loopstodio/loopstodio.component';
 import { AudiophileComponent } from './components/projects/audiophile/audiophile.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
-import { MovieAppComponent } from './components/projects/movie-app/movie-app.component';
+import { WeatherComponent } from './components/projects/weather/weather.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { MovieAppComponent } from './components/projects/movie-app/movie-app.com
     LoopstodioComponent,
     AudiophileComponent,
     ContactMeComponent,
-    MovieAppComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,

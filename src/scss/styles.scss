@@ -42,4 +42,42 @@ html {
     position: relative;
 }
 
+// H and P tags globaly styling
+
+h2 {
+    color: $darkBlue;
+    font-size: $H2;
+    font-family: $ibarra;
+    font-weight: $H2-weight;
+    letter-spacing: $H2-LS;
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    color: $darkBlue;
+    font-size: $H3;
+    font-family: $ibarra;
+    font-weight: $H2-weight;
+    letter-spacing: $H3-LS; 
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    color: $grayishDarkBlue;
+    font-size: $body;
+    font-weight: $body-weight;
+    line-height: 1.6rem;
+
+    
+    @include respond(phone) {
+        font-size: 0.8rem;
+    }
+}
+
 

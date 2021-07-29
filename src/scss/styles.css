@@ -192,6 +192,32 @@ $breakpoint argument choises:
   }
 }
 
+.go-back {
+  display: inline-block;
+  color: #33323d;
+  font-size: 1rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.go-back::before {
+  content: '<';
+  margin-right: 0.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.go-back:hover {
+  color: #5fb4a2;
+}
+
+.go-back:hover::before {
+  margin-right: 1rem;
+}
+
 .pr-gl-desc {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -202,33 +228,22 @@ $breakpoint argument choises:
 }
 
 .pr-gl-desc h3 {
-  color: #203a4c;
-  font-size: 2rem;
-  font-family: "Ibarra Real Nova", serif;
-  font-weight: 700;
-  letter-spacing: 0.01812rem;
   margin-bottom: 2.062rem;
 }
 
 @media (max-width: 35rem) {
   .pr-gl-desc h3 {
-    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
 }
 
 .pr-gl-desc p {
   max-width: 19.062rem;
-  color: #33323d;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6rem;
   margin-bottom: 2.062rem;
 }
 
 @media (max-width: 35rem) {
   .pr-gl-desc p {
-    font-size: 0.8rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -291,6 +306,206 @@ $breakpoint argument choises:
   }
 }
 
+.myWorks-header {
+  margin: 3rem 0;
+}
+
+.myWorks-header .myWorks-img {
+  width: 100%;
+  height: 31.25rem;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 46.875rem) {
+  .myWorks-header .myWorks-img {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .myWorks-header .myWorks-img {
+    height: 18.75rem;
+  }
+}
+
+.myWorks-header .myWorks-img .top-img {
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.myWorks-header .myWorks-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 56.25rem) {
+  .myWorks-header .myWorks-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.myWorks-header .myWorks-description .project-background {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+@media (max-width: 75rem) {
+  .myWorks-header .myWorks-description .project-background {
+    width: 25.8125rem;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .myWorks-header .myWorks-description .project-background {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.myWorks-header .myWorks-description .project-background h2 {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 75rem) {
+  .myWorks-header .myWorks-description .project-background h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .myWorks-header .myWorks-description .project-background h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.myWorks-header .myWorks-description .project-background p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.myWorks-header .myWorks-description .project-background span {
+  margin: 0.9375rem;
+}
+
+@media (max-width: 75rem) {
+  .myWorks-header .myWorks-description .project-background span {
+    margin: 0.537rem;
+  }
+}
+
+.myWorks-header .myWorks-description .project-background #btn {
+  font-size: 0.7rem;
+  padding: 0.525rem 1.437rem;
+}
+
+@media (max-width: 46.875rem) {
+  .myWorks-header .myWorks-description .project-background #btn {
+    font-size: 0.6rem;
+    padding: 0.225rem 1.037rem;
+  }
+}
+
+.myWorks-header .static-previews {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+@media (max-width: 56.25rem) {
+  .myWorks-header .static-previews {
+    width: 100%;
+  }
+}
+
+.myWorks-header .static-previews h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 75rem) {
+  .myWorks-header .static-previews h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .myWorks-header .static-previews h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.myWorks-header .static-previews .static-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 75rem) {
+  .myWorks-header .static-previews .static-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.myWorks-header .static-previews .static-img .img-1 {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+  margin-right: 2rem;
+}
+
+@media (max-width: 75rem) {
+  .myWorks-header .static-previews .static-img .img-1 {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.myWorks-header .static-previews .static-img .img-2 {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.myWorks-header .buttons {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.0625rem solid rgba(51, 50, 61, 0.3);
+  border-bottom: 0.0625rem solid rgba(51, 50, 61, 0.3);
+}
+
 .res-container {
   padding: 0 8rem;
 }
@@ -331,5 +546,46 @@ html {
   line-height: 1.875rem;
   overflow-x: hidden;
   position: relative;
+}
+
+h2 {
+  color: #203a4c;
+  font-size: 2.5rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  letter-spacing: 0.0225rem;
+}
+
+@media (max-width: 35rem) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  color: #203a4c;
+  font-size: 2rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  letter-spacing: 0.01812rem;
+}
+
+@media (max-width: 35rem) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  color: #33323d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+@media (max-width: 35rem) {
+  p {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -89,6 +89,33 @@
     }
     // Audiophile project styling end!
 
+    // Weather app styling start!
+    .weather-img {
+        grid-column: 2/2;
+        grid-row: 1/1;
+        max-width: 100%;
+        background-image: url('../../../assets/projects-img/weather_app_full.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @include respond(tab-land) {
+            grid-column: 1/1;
+            grid-row: 1/1;
+        }
+    }
+
+    .weather-description {
+        grid-column: 1/1;
+        grid-template-rows: 1/1;
+
+        @include respond(tab-land) {
+            grid-column: 1/1;
+            grid-row: 2/2;
+        }
+    }
+    // Weather app styling end!
+
     // Contact-me
     &__contact-me {
         display: grid;

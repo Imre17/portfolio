@@ -89,31 +89,15 @@
 
 
         h2 {
-            color: $darkBlue;
-            font-size: $H2;
-            font-family: $ibarra;
-            font-weight: $H2-weight;
-            letter-spacing: $H2-LS;
             margin-bottom: 2rem;
-
-            @include respond(phone) {
-                font-size: 2rem;
-            }
         }
 
         p {
-            color: $grayishDarkBlue;
-            font-size: $body;
-            font-weight: $body-weight;
-            line-height: 1.6rem;
 
             @media (max-width: 60.9375rem) {
                 text-align: left;
             }
 
-            @include respond(phone) {
-                font-size: 0.8rem;
-            }
         }
 
         #btn {
@@ -141,19 +125,10 @@ hr {
     margin: 3rem 0;
     
     
-    h1 {
+    h2 {
         margin-bottom: 2rem;
-        color: $darkBlue;
-        font-size: $H2;
-        font-weight: $H2-weight;
-        font-family: $ibarra;
-        letter-spacing: $H2-LS;
         text-align: center;
 
-
-        @include respond(tablet) {
-            font-size: 2rem
-        }
     }
 
     &__box {

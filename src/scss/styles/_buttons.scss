@@ -144,3 +144,28 @@
         }
     } 
 }
+
+// Go back btn for my works
+.go-back {
+    display: inline-block;
+    color: $grayishDarkBlue;
+    font-size: 1rem;
+    font-family: $public-sans;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.2s;
+
+    &::before {
+        content: '<';
+        margin-right: 0.5rem;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        color: $slightDesaturatedCyan;
+
+        &::before {
+            margin-right: 1rem;
+        }
+    }
+}

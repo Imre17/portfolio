@@ -6,8 +6,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AudiophileComponent } from './components/projects/audiophile/audiophile.component';
 import { EasybankComponent } from './components/projects/easybank/easybank.component';
 import { LoopstodioComponent } from './components/projects/loopstodio/loopstodio.component';
-import { MovieAppComponent } from './components/projects/movie-app/movie-app.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { WeatherComponent } from './components/projects/weather/weather.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'projects/easybank', component: EasybankComponent },
   { path: 'projects/loopstudio', component: LoopstodioComponent },
   { path: 'projects/audiophile', component: AudiophileComponent },
-  { path: 'projects/movie-app', component: MovieAppComponent }
+  { path: 'projects/weather', component: WeatherComponent }
 ];
 
 @NgModule({
