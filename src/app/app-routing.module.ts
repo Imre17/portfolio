@@ -8,12 +8,14 @@ import { EasybankComponent } from './components/projects/easybank/easybank.compo
 import { LoopstodioComponent } from './components/projects/loopstodio/loopstodio.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WeatherComponent } from './components/projects/weather/weather.component';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact-me', component: ContactMeComponent },
+  { path: 'thank-you', component: ThankYouComponent },
 
   { path: 'projects/easybank', component: EasybankComponent },
   { path: 'projects/loopstudio', component: LoopstodioComponent },

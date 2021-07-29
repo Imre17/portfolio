@@ -1,0 +1,30 @@
+@import '../../../scss/global.scss';
+
+h1 {
+    font-family: $public-sans;
+}
+
+a {
+    text-decoration: none;
+    color: $grayishDarkBlue;
+    font-family: $public-sans;
+    font-size: 1.2rem;
+    border: 1px solid $grayishDarkBlue;
+    padding: 0.5rem 1rem;
+    transition: 0.2s;
+
+    &::before {
+        content: '<';
+        margin-right: 0.5rem;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        color: $slightDesaturatedCyan;
+        background-color: $darkBlue;
+
+        &::before {
+            margin-right: 1rem;
+        }
+    }
+}

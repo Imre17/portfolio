@@ -13,6 +13,7 @@ import { LoopstodioComponent } from './components/projects/loopstodio/loopstodio
 import { AudiophileComponent } from './components/projects/audiophile/audiophile.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { WeatherComponent } from './components/projects/weather/weather.component';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { WeatherComponent } from './components/projects/weather/weather.componen
     AudiophileComponent,
     ContactMeComponent,
     WeatherComponent,
+    ThankYouComponent,
   ],
   imports: [
     BrowserModule,
