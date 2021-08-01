@@ -12,7 +12,7 @@ export class HomeComponent {
     this.getScreenSize();
   }
   
-  // Get the width of the window screen
+  // Get the height of the window screen
   @HostListener('window:resize', ['$event'])
   getScreenSize(event?) {
         this.scrHeight = window.innerHeight;

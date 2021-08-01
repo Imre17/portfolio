@@ -427,6 +427,14 @@ html {
   overflow-x: hidden;
   position: relative;
 }
+h1 {
+  color: #203a4c;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 3.125rem;
+  letter-spacing: 0.028125rem;
+}
 h2 {
   color: #203a4c;
   font-size: 2.5rem;
@@ -461,6 +469,14 @@ p {
   p {
     font-size: 0.8rem;
   }
+}
+.logo {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-image: url('logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=styles.css.map*/
