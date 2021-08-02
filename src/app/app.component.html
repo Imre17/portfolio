@@ -4,7 +4,7 @@
 </div>
 <router-outlet></router-outlet>
 
-<div class="sticky" *ngIf="!hasRoute('/') && !hasRoute('/thank-you')">
+<div *ngIf="!hasRoute('/') && !hasRoute('/thank-you')">
     <app-footer></app-footer>
 </div>
 
