@@ -419,7 +419,7 @@ $breakpoint argument choises:
 }
 body,
 html {
-  min-height: 100vh;
+  height: 100%;
   background-color: #fafafa;
   font-size: 1rem;
   font-weight: 400;
